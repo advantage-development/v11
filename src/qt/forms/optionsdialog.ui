@@ -134,6 +134,9 @@
         <layout class="QHBoxLayout" name="horizontalLayout_4_Main">
          <item>
           <widget class="QLabel" name="label">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
            <property name="toolTip">
             <string>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</string>
            </property>
@@ -144,6 +147,9 @@
          </item>
          <item>
           <widget class="QSpinBox" name="obfuscationRounds">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
            <property name="minimum">
             <number>2</number>
            </property>
@@ -161,6 +167,9 @@
         <layout class="QHBoxLayout" name="horizontalLayout">
          <item>
           <widget class="QLabel" name="label_2">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
            <property name="toolTip">
             <string>This amount acts as a threshold to turn off Obfuscation once it's reached.</string>
            </property>
@@ -183,6 +192,9 @@
          </item>
          <item>
           <widget class="QSpinBox" name="anonymizeAdvantage">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
            <property name="minimum">
             <number>100</number>
            </property>
@@ -287,6 +299,9 @@
        </item>
        <item>
         <widget class="QCheckBox" name="connectSocks">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <property name="toolTip">
           <string>Connect to the Advantage network through a SOCKS5 proxy.</string>
          </property>
@@ -312,6 +327,9 @@
          </item>
          <item>
           <widget class="QValidatedLineEdit" name="proxyIp">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
            <property name="minimumSize">
             <size>
              <width>140</width>
@@ -344,6 +362,9 @@
          </item>
          <item>
           <widget class="QLineEdit" name="proxyPort">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
            <property name="minimumSize">
             <size>
              <width>55</width>

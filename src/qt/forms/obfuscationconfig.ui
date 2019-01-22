@@ -2,6 +2,9 @@
 <ui version="4.0">
  <class>ObfuscationConfig</class>
  <widget class="QDialog" name="ObfuscationConfig">
+  <property name="enabled">
+   <bool>false</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>

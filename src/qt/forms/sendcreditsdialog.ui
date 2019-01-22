@@ -651,7 +651,7 @@
         <x>0</x>
         <y>0</y>
         <width>830</width>
-        <height>95</height>
+        <height>150</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,1">
@@ -787,7 +787,7 @@
                  <string notr="true">font-weight:bold;</string>
                 </property>
                 <property name="text">
-                 <string>Transaction Fee:</string>
+                 <string>Transaction Fee — 4.95%:</string>
                 </property>
                </widget>
               </item>
@@ -800,6 +800,9 @@
               </item>
               <item>
                <widget class="QPushButton" name="buttonChooseFee">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
                 <property name="text">
                  <string>Choose...</string>
                 </property>
@@ -807,6 +810,9 @@
               </item>
               <item>
                <widget class="QPushButton" name="buttonMinimizeFee">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
                 <property name="toolTip">
                  <string>collapse fee-settings</string>
                 </property>
@@ -1234,15 +1240,18 @@
              </property>
              <item>
               <widget class="QCheckBox" name="checkBoxFreeTx">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
                <property name="text">
-                <string>Send as zero-fee transaction if possible</string>
+                <string/>
                </property>
               </widget>
              </item>
              <item>
               <widget class="QLabel" name="labelFreeTx">
                <property name="text">
-                <string>(confirmation may take longer)</string>
+                <string/>
                </property>
                <property name="margin">
                 <number>5</number>
@@ -1386,6 +1395,9 @@
        </property>
        <item>
         <widget class="QCheckBox" name="checkUseObfuscation">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <property name="minimumSize">
           <size>
            <width>95</width>
@@ -1403,7 +1415,7 @@
        <item>
         <widget class="QCheckBox" name="checkSwiftTX">
          <property name="enabled">
-          <bool>true</bool>
+          <bool>false</bool>
          </property>
          <property name="minimumSize">
           <size>
@@ -1466,7 +1478,7 @@
  </resources>
  <connections/>
  <buttongroups>
-  <buttongroup name="groupFee"/>
   <buttongroup name="groupCustomFee"/>
+  <buttongroup name="groupFee"/>
  </buttongroups>
 </ui>
